@@ -723,7 +723,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #e835ca;
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
@@ -862,7 +862,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  color: #ed63c4;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -908,7 +908,7 @@ section .container {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #28a745;
+  color: #a72896;
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
