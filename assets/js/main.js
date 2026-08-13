@@ -17,6 +17,20 @@
     link.href = 'mailto:' + email;
   });
 
+  var projectCards = Array.prototype.slice.call(document.querySelectorAll('.project-card'));
+  projectCards.forEach(function (card) {
+    var summary = card.querySelector('summary');
+    if (!summary) return;
+
+    summary.setAttribute('aria-expanded', String(card.open));
+    card.addEventListener('toggle', function () {
+      summary.setAttribute('aria-expanded', String(card.open));
+    });
+    card.addEventListener('click', function (event) {
+      if (card.open && !event.target.closest('summary, a, button')) card.open = false;
+    });
+  });
+
   function closeMenu() {
     header.classList.remove('nav-open');
     toggle.setAttribute('aria-expanded', 'false');
@@ -41,7 +55,12 @@
   }
 
   document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape') closeMenu();
+    if (event.key === 'Escape') {
+      closeMenu();
+      projectCards.forEach(function (card) {
+        if (card.open) card.open = false;
+      });
+    }
   });
 
   function updateScrollState() {

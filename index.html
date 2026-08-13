@@ -115,7 +115,7 @@
                 <span class="project-result"><strong>Audio</strong><span>transcription</span><strong>OCR</strong><span>images + PDFs</span></span>
                 <span class="tag-list"><span>Electron</span><span>React</span><span>TypeScript</span><span>Gemini</span><span>Mistral</span><span>ffmpeg</span></span>
               </span>
-              <span class="project-card-bottom"><span>Open case study</span><span class="case-icon" aria-hidden="true">+</span></span>
+              <span class="project-card-bottom"><span class="project-card-action"><span class="project-card-action-open">Open case study</span><span class="project-card-action-close">Close case study</span></span><span class="case-icon" aria-hidden="true">+</span></span>
             </summary>
             <div class="case-study">
               <div class="case-study-grid">
@@ -140,6 +140,39 @@
             <summary class="project-summary">
               <span class="project-card-top">
                 <span class="project-number">02</span>
+                <span class="project-kind">Personal infrastructure / Multi-node lab</span>
+              </span>
+              <span class="project-card-content">
+                <span class="project-title">Multi-Node Home Lab</span>
+                <span class="project-description">What began as a repurposed laptop became a two-node private platform. An Ubuntu Server host and a Mac mini coordinate workloads, run self-hosted services, and provide a real environment for testing recovery.</span>
+                <span class="project-result"><strong>2 nodes</strong><span>coordinated workloads</span><strong>RAG</strong><span>calendar + coding automation</span><strong>Restore-tested</strong><span>isolated recovery</span></span>
+                <span class="tag-list"><span>Docker</span><span>Ubuntu Server</span><span>systemd</span><span>Tailscale</span><span>RAG AI</span><span>UFW</span><span>rclone</span></span>
+              </span>
+              <span class="project-card-bottom"><span class="project-card-action"><span class="project-card-action-open">Open case study</span><span class="project-card-action-close">Close case study</span></span><span class="case-icon" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="case-study">
+              <div class="case-study-grid">
+                <div><span class="label">Problem</span><p>Move beyond a single-server setup and operate multiple machines as one dependable environment while keeping private services, personal data, and administrative access controlled.</p></div>
+                <div><span class="label">Build</span><p>An Ubuntu Server host and a Mac mini work together as a small cluster for distributing workloads. The platform runs containerized services, private remote access, authenticated storage, systemd health checks, encrypted off-host backups, and a small retrieval-augmented generation system that uses private context to automate calendar workflows and support privacy-conscious coding.</p></div>
+                <div><span class="label">Result</span><p>Two nodes now support coordinated workloads and provide a practical environment for service placement, networking, observability, and recovery. Health checks run every 15 minutes, backups retain 14 snapshots, and recovery has been verified in an isolated no-port Compose project.</p></div>
+              </div>
+              <div class="architecture">
+                <div class="architecture-heading"><span class="label">System sketch</span><span>nodes to private automation</span></div>
+                <div class="architecture-flow" role="img" aria-label="An Ubuntu Server host and Mac mini coordinate workloads, with a retrieval-augmented generation system for calendar and coding automation and an operations layer for monitoring and recovery">
+                  <span class="architecture-node"><strong>Ubuntu node</strong><small>core services</small></span><span class="architecture-arrow" aria-hidden="true">&#8594;</span>
+                  <span class="architecture-node"><strong>Mac mini</strong><small>cluster workloads</small></span><span class="architecture-arrow" aria-hidden="true">&#8594;</span>
+                  <span class="architecture-node"><strong>RAG system</strong><small>calendar + coding</small></span><span class="architecture-arrow" aria-hidden="true">&#8594;</span>
+                  <span class="architecture-node"><strong>Operations</strong><small>monitor + recover</small></span>
+                </div>
+              </div>
+              <p class="case-study-boundary">Public descriptions omit addresses, hostnames, ports, topology, credentials, exact versions, and private configuration.</p>
+            </div>
+          </details>
+
+          <details class="project-card project-card-half">
+            <summary class="project-summary">
+              <span class="project-card-top">
+                <span class="project-number">03</span>
                 <span class="project-kind">Personal project / Gemini-generated window previews</span>
               </span>
               <span class="project-card-content">
@@ -147,7 +180,7 @@
                 <span class="project-description">Gemini analyzes a room photo, pinpoints the window opening, and generates a photorealistic replacement-window image right inside it — finished with live color swaps in the browser.</span>
                 <span class="tag-list"><span>FastAPI</span><span>Gemini vision</span><span>Gemini image gen</span><span>Canvas chroma key</span></span>
               </span>
-              <span class="project-card-bottom"><span>Open project details</span><span class="case-icon" aria-hidden="true">+</span></span>
+              <span class="project-card-bottom"><span class="project-card-action"><span class="project-card-action-open">Open project details</span><span class="project-card-action-close">Close project details</span></span><span class="case-icon" aria-hidden="true">+</span></span>
             </summary>
             <div class="case-study">
               <p>In short: upload a photo of your room, pick a window style, and see an AI-rendered replacement window sit in the real opening of your room — then flip through paint finishes without re-rendering. A FastAPI backend runs the AI work; the browser only composites and recolors.</p>
@@ -171,6 +204,42 @@
               </div>
             </div>
           </details>
+
+          <details class="project-card project-card-half">
+            <summary class="project-summary">
+              <span class="project-card-top">
+                <span class="project-number">04</span>
+                <span class="project-kind">University project / Medical VR simulation</span>
+              </span>
+              <span class="project-card-content">
+                <span class="project-title">VR Echocardiography Training</span>
+                <span class="project-description">A hybrid physical and OpenXR training simulation that turns anatomical heart models and a realistic TTE/TEE probe into a hands-on echocardiography environment.</span>
+                <span class="project-result"><strong>80%</strong><span>user satisfaction increase</span><strong>3</strong><span>medical fellows tested</span><strong>OpenXR</strong><span>cross-headset runtime</span></span>
+                <span class="tag-list"><span>C#</span><span>C++</span><span>OpenXR</span><span>3D interaction</span><span>Physical prototyping</span><span>User research</span></span>
+              </span>
+              <span class="project-card-bottom"><span class="project-card-action"><span class="project-card-action-open">Open case study</span><span class="project-card-action-close">Close case study</span></span><span class="case-icon" aria-hidden="true">+</span></span>
+            </summary>
+            <div class="case-study">
+              <div class="case-study-grid">
+                <div><span class="label">Problem</span><p>Echocardiography trainees need to recognize heart views quickly while controlling a probe in three-dimensional space. The existing application relied on deep menus, created a steep learning curve, and made accidental selections too easy.</p></div>
+                <div><span class="label">Build</span><p>Collaborating with the University of Minnesota's Visible Heart Lab, I helped transform real anatomical heart models into interactive simulations for TEE and TTE probe practice. We also worked with the College of Design to develop a physical TTE/TEE probe so medical students could practice the hand movements and procedural feel of a real examination. In VR, we replaced deep and radial menus with a spatial pocket system, grab-based selection thresholds, icon-driven widgets, constrained incompatible heart and probe choices, wrist-mounted undo and redo controls, and probe cross-section visualization. The simulation was built in C# and C++ with OpenXR support for Meta/Oculus, Valve, and HTC headsets.</p></div>
+                <div><span class="label">Result</span><p>After cognitive walkthroughs, heuristic evaluations, and testing with medical fellows, all three users described the redesigned interface as more intuitive than the previous version. The project reported an 80% increase in user satisfaction and a training workflow that could reduce reliance on expensive physical equipment.</p></div>
+              </div>
+              <div class="architecture">
+                <div class="architecture-heading"><span class="label">System sketch</span><span>anatomy to spatial feedback</span></div>
+                <div class="architecture-flow" role="img" aria-label="Anatomical heart models enter an OpenXR simulation, users interact through a spatial pocket interface and probe controls, and the system provides real-time visual training feedback">
+                  <span class="architecture-node"><strong>Heart models</strong><small>real anatomy</small></span><span class="architecture-arrow" aria-hidden="true">&#8594;</span>
+                  <span class="architecture-node"><strong>Physical probe</strong><small>TTE + TEE feel</small></span><span class="architecture-arrow" aria-hidden="true">&#8594;</span>
+                  <span class="architecture-node"><strong>OpenXR + UI</strong><small>spatial interaction</small></span><span class="architecture-arrow" aria-hidden="true">&#8594;</span>
+                  <span class="architecture-node"><strong>Training feedback</strong><small>probe + views</small></span>
+                </div>
+              </div>
+              <div class="case-study-links">
+                <a class="text-link case-study-link" href="https://youtu.be/zflAt7QB49Y" target="_blank" rel="noopener">Watch the demonstration <span aria-hidden="true">&#8599;</span></a>
+              </div>
+            </div>
+          </details>
+
         </div>
       </div>
     </section>
